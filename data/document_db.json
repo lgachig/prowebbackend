@@ -1,0 +1,129 @@
+{
+  "audit_logs": [
+    {
+      "id": "900e8400-e29b-41d4-a716-446655440001",
+      "user_id": "550e8400-e29b-41d4-a716-446655440000",
+      "action": "login",
+      "entity_type": "user",
+      "entity_id": "550e8400-e29b-41d4-a716-446655440000",
+      "ip_address": "192.168.1.100",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "request_data": {
+        "email": "juan.perez@uce.edu.ec"
+      },
+      "response_data": {
+        "status": "success",
+        "user_id": "550e8400-e29b-41d4-a716-446655440000"
+      },
+      "status": "success",
+      "error_message": null,
+      "created_at": "2024-01-24T11:45:00Z"
+    },
+    {
+      "id": "900e8400-e29b-41d4-a716-446655440002",
+      "user_id": "550e8400-e29b-41d4-a716-446655440000",
+      "action": "parking_entry",
+      "entity_type": "session",
+      "entity_id": "800e8400-e29b-41d4-a716-446655440001",
+      "ip_address": "192.168.1.100",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "request_data": {
+        "zone_id": "600e8400-e29b-41d4-a716-446655440001",
+        "slot_id": "700e8400-e29b-41d4-a716-446655440002"
+      },
+      "response_data": {
+        "status": "success",
+        "session_id": "800e8400-e29b-41d4-a716-446655440001"
+      },
+      "status": "success",
+      "error_message": null,
+      "created_at": "2024-01-24T11:00:00Z"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "a00e8400-e29b-41d4-a716-446655440001",
+      "zone_id": "600e8400-e29b-41d4-a716-446655440001",
+      "alert_type": "capacity_exceeded",
+      "severity": "warning",
+      "title": "Zone A exceeds 90% capacity",
+      "message": "Zone A has reached 90% occupancy rate. Consider alternative zones.",
+      "is_resolved": false,
+      "resolved_at": null,
+      "resolved_by": null,
+      "metadata": {
+        "current_occupancy": 90,
+        "threshold": 90
+      },
+      "created_at": "2024-01-24T11:22:00Z",
+      "updated_at": "2024-01-24T11:22:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "b00e8400-e29b-41d4-a716-446655440001",
+      "user_id": "550e8400-e29b-41d4-a716-446655440000",
+      "type": "parking_checkin",
+      "title": "Check-in Success",
+      "message": "User Juan Pérez: CHECK-IN SUCCESS",
+      "is_read": false,
+      "metadata": {
+        "zone": "Zone A",
+        "slot": "Z1-B1",
+        "entry_time": "2024-01-24T11:00:00Z"
+      },
+      "created_at": "2024-01-24T11:00:00Z"
+    },
+    {
+      "id": "b00e8400-e29b-41d4-a716-446655440002",
+      "user_id": null,
+      "type": "broadcast",
+      "title": "Capacity Alert",
+      "message": "Zone A exceeds 90% capacity",
+      "is_read": false,
+      "metadata": {
+        "zone_id": "600e8400-e29b-41d4-a716-446655440001"
+      },
+      "created_at": "2024-01-24T11:22:00Z"
+    },
+    {
+      "id": "3949cfac-95aa-407e-9244-666a3423aa6e",
+      "user_id": "550e8400-e29b-41d4-a716-446655440000",
+      "type": "parking_checkin",
+      "title": "Check-in Success",
+      "message": "User Juan Pérez: CHECK-IN SUCCESS",
+      "metadata": {
+        "session_id": "ebdf7626-8420-49db-8a88-7ae11986b5aa",
+        "zone_id": "600e8400-e29b-41d4-a716-446655440001"
+      },
+      "is_read": false,
+      "created_at": "2025-12-26T00:36:57.797Z"
+    },
+    {
+      "id": "0afc1365-b1a4-48d2-9567-e1020c6459cc",
+      "user_id": "550e8400-e29b-41d4-a716-446655440003",
+      "type": "parking_checkin",
+      "title": "Check-in Success",
+      "message": "User Carlos Ruiz: CHECK-IN SUCCESS",
+      "metadata": {
+        "session_id": "3256e883-c3dd-4f12-8f7c-00809f789143",
+        "zone_id": "600e8400-e29b-41d4-a716-446655440001"
+      },
+      "is_read": false,
+      "created_at": "2025-12-26T00:41:58.202Z"
+    },
+    {
+      "id": "cfae9487-d024-46d1-9eb6-578981bbcb79",
+      "user_id": "550e8400-e29b-41d4-a716-446655440002",
+      "type": "parking_checkin",
+      "title": "Check-in Success",
+      "message": "User Dra. María Luz: CHECK-IN SUCCESS",
+      "metadata": {
+        "session_id": "341dd5e6-d9f7-4e42-9cf5-5754d6961a42",
+        "zone_id": "600e8400-e29b-41d4-a716-446655440001"
+      },
+      "is_read": false,
+      "created_at": "2025-12-26T00:42:33.221Z"
+    }
+  ]
+}
